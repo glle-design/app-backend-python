@@ -32,5 +32,7 @@ async def root():                        # Hacemos una función asyncrona
 async def url():
     return {"url_curso":"https://glledev.com/python"}
 
-
+@app.get("/userdb")
+async def url():
+    return {"Aplicación Funcionado Python"}
 
