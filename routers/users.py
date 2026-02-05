@@ -82,22 +82,7 @@ def search_user(id: int):
 
 
 # Llamr por Query: Llama por un parámetro /?id=1
-"""
-@router.get("/userquery/")
-async def user(id: int):
-    users = filter(lambda user: user.id == id, users_list)
-    try:
-        return list(users)[0]
-    except:
-        return {"error": "No se ha encontrado el usuario"}
 
-@router.get("/users")                             
-async def users():                        
-    return [{"name": "Brais", "surname":"Moure", "url":"https://moure.dev","age": 40},
-            {"name": "Gabriel", "surname":"Marino", "url":"https://gabriel.dev","age": 35},
-            {"name": "Lionel", "surname":"Messi", "url":"https://lio.dev", "age": 20}]
-                         
-"""
 
 
 
